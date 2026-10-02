@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <title>Off the Cuff</title>
+  <!-- Lilac paper tile, one ink: a speech bubble holding a five-bar tally (counting the fillers). Flat, no signal. -->
+  <rect width="512" height="512" rx="112" fill="#C9B8F2"/>
+
+  <!-- speech bubble + tally: 18-unit round-cap ink strokes, drawn in the ~150..362 box, tilted -5° like it was stuck on by hand -->
+  <g fill="none" stroke="#151515" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"
+     transform="rotate(-5 256 266)">
+    <path d="M190 164 H322 A40 40 0 0 1 362 204 V282 A40 40 0 0 1 322 322 H242 L190 366 V322 A40 40 0 0 1 150 282 V204 A40 40 0 0 1 190 164 Z"/>
+    <path d="M205 208 V278 M239 208 V278 M273 208 V278 M307 208 V278"/>
+    <path d="M184 264 L328 222"/>
+  </g>
+</svg>

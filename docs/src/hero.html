@@ -1,0 +1,62 @@
+<!doctype html>
+<!--
+  Off the Cuff hero (house style). Render with ~/.claude/skills/brand-project/render.sh:
+  1600x900 (hero), 1600x900 @2 (retina), 1600x800 @0.8 (social preview, 1280x640).
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Off the Cuff hero</title>
+<style>
+  @font-face {
+    font-family: "Gabarito";
+    src: url("fonts/Gabarito-var.woff2") format("woff2");
+    font-weight: 400 800;
+    font-display: block;
+  }
+  :root {
+    --desk: #E2E2DE;          /* house ground, same for every project */
+    --ink: #151515;           /* house ink: text and all drawn strokes */
+    --accent: #C9B8F2;        /* this project's paper color (see registry) */
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; }
+  body {
+    background: var(--desk); color: var(--ink); font-family: "Gabarito", sans-serif;
+    display: flex; align-items: center; justify-content: center; gap: 110px;
+  }
+
+  /* left: the object. A flat square of the project's paper, slightly crooked, carrying the drawn mark */
+  .object { position: relative; width: 580px; height: 580px; flex: none; }
+  .paper {
+    position: absolute; inset: 40px; background: var(--accent); transform: rotate(-3deg);
+    display: grid; place-items: center;
+  }
+  .paper svg { width: 340px; height: 340px; transform: translateY(6px); }
+
+  /* right: the words */
+  .words { flex: none; transform: translateY(-2%); }
+  h1 { font-size: 112px; font-weight: 700; letter-spacing: -0.035em; line-height: .9; }
+  p  { margin-top: 30px; font-size: 40px; font-weight: 400; line-height: 1.22; letter-spacing: -0.01em; }
+</style>
+</head>
+<body>
+  <div class="object" aria-hidden="true">
+    <div class="paper">
+      <!-- The mark: the same strokes as logo.svg's mark group, cropped to the mark's area. -->
+      <svg viewBox="128 124 256 256" fill="none" stroke="#151515" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+        <g transform="rotate(-2 256 266)">
+          <path d="M190 164 H322 A40 40 0 0 1 362 204 V282 A40 40 0 0 1 322 322 H242 L190 366 V322 A40 40 0 0 1 150 282 V204 A40 40 0 0 1 190 164 Z"/>
+          <path d="M205 208 V278 M239 208 V278 M273 208 V278 M307 208 V278"/>
+          <path d="M184 264 L328 222"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <div class="words">
+    <h1>Off the Cuff</h1>
+    <p>One topic. One minute.<br>An honest score back.</p>
+  </div>
+</body>
+</html>

@@ -1,12 +1,19 @@
-# Off the Cuff 🎙️
+<p align="center">
+  <img src="docs/logo.png" width="128" alt="Off the Cuff logo">
+</p>
 
-**A daily impromptu-speaking coach for iPhone.** Get a random topic, talk to the camera for one minute, and get an honest score on your filler words, stutters, pace, pauses, and content, all analyzed on-device, for free.
+<h1 align="center">Off the Cuff</h1>
 
-![Off the Cuff screenshots](docs/hero.jpg)
+<p align="center"><b>One topic. One minute. An honest score back.</b><br>
+A daily impromptu-speaking coach for iPhone that gives you a random topic, records you for a minute, and scores your filler words, stutters, pace, pauses, and content, all on-device and free.</p>
 
-> One random topic. One minute. Every day.
+<p align="center"><img src="docs/hero.png" alt="Off the Cuff: a hand-drawn speech bubble holding a five-bar tally on a lilac square, next to the tagline “One topic. One minute. An honest score back.”"></p>
 
 ---
+
+## Screenshots
+
+![Off the Cuff screenshots: practice home, score report, progress dashboard, and history](docs/hero.jpg)
 
 ## Why I built it
 
